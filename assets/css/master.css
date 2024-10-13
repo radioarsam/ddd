@@ -1,0 +1,445 @@
+:root {
+    --y: #f6b411;
+
+}
+
+.copy1 {
+    width: 100%;
+    background-color: var(--y);
+    padding: 120px 0;
+    border-radius: 10px 0 0 10px;
+
+    >* {
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+
+    >h4 {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    >h5 {
+        font-size: 45px;
+    }
+
+    >span {
+        color: black;
+        font-size: 70px;
+        font-weight: bolder;
+    }
+
+    >h6 {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    min-height: 500px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.095);
+    padding: 50px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.103);
+    margin: 20px 0;
+
+    >.row {
+        >* {
+            /* text-align: center; */
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            /* border: 1px solid black; */
+        }
+
+        >.icon {
+            font-size: 80px;
+            color: var(--y);
+        }
+
+        >h2 {
+            margin-top: 10px;
+        }
+
+        >span {
+            color: rgb(52, 52, 52);
+            margin-bottom: 10px;
+        }
+
+        >p {
+            text-align: center;
+            color: rgb(46, 46, 46);
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        >h5 {
+            font-weight: normal;
+            font-size: 20px;
+            color: rgb(57, 57, 57);
+            margin: 10px 0;
+        }
+
+        >.row {
+
+            /* background-color: red; */
+            span {
+                /* border: 1px solid black; */
+                color: var(--y);
+
+                &:first-of-type {
+                    font-size: 50px;
+                }
+
+                &:last-of-type {
+                    font-size: 20px;
+                    display: flex;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+}
+
+.cardFooter {
+    width: 250px;
+    margin-top: 0;
+    >.row {
+        >h2 {
+            font-size: 20px;
+        }
+        >p{
+            font-size: 14px;
+        }
+    }
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+
+    >main {
+        width: 100%;
+        height: auto;
+
+        /* overflow-x: hidden; */
+        >.head_top {
+            position: relative;
+            padding: 0 7%;
+            width: 100%;
+            min-height: 140vh;
+            background-color: black;
+            background-image: url(../images/bg.jpg);
+            background-size: cover;
+
+            &::before {
+                content: '';
+                display: flex;
+                width: 100%;
+                min-height: 140vh;
+                background-color: rgba(0, 0, 0, 0.654);
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            /* border: 3px solid red; */
+            >.row {
+                position: relative;
+
+                /* border: 2px solid yellow; */
+                >* {
+                    /* border: 2px solid blue; */
+                    width: 100%;
+                }
+
+                >header {
+                    height: 110px;
+
+                    >.row {
+                        height: 100%;
+
+                        >* {
+                            /* border: 1px solid red; */
+                            height: 100%;
+                        }
+
+                        >figure {
+                            width: 20%;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        >nav {
+                            width: 60%;
+
+                            >ul {
+                                width: 100%;
+                                height: 100%;
+                                /* background-color: red; */
+                                justify-content: center;
+
+                                >li {
+
+                                    /* border: 1px solid white; */
+                                    >a {
+                                        /* background-color: yellow; */
+                                        display: flex;
+                                        height: 100%;
+                                        align-items: center;
+                                        padding: 0 15px;
+                                        color: white;
+
+                                        &:hover {
+                                            background-color: rgba(255, 255, 255, 0.264);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        >div {
+                            width: 20%;
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+
+                            >a {
+                                padding: 10px 20px;
+                                background-color: var(--y);
+                                color: rgb(29, 29, 29);
+                                border-radius: 3px;
+                            }
+                        }
+                    }
+                }
+
+                >div {
+                    &:first-of-type {
+                        padding: 100px 0;
+
+                        >* {
+                            color: white;
+                            width: 100%;
+                            /* border: 1px solid rgb(132, 132, 132); */
+                            text-align: center;
+                            margin: 20px 0;
+                        }
+
+                        >h1 {
+                            font-size: 5vw;
+
+                            >strong {
+                                color: var(--y);
+                            }
+                        }
+
+                        >h2 {
+                            font-size: 3vw;
+                        }
+                    }
+
+                    &:last-of-type {
+                        justify-content: center;
+                        transform: translateY(20%);
+
+                        >div {
+                            width: 95%;
+                            min-height: 100px;
+
+                            /* background-color: white; */
+                            >div {
+
+                                /* border: 3px solid red; */
+                                &:first-of-type {
+                                    width: 30%;
+                                }
+
+                                &:last-of-type {
+                                    width: 70%;
+                                    background-color: white;
+                                    border-radius: 0 10px 10px 0;
+
+                                    >form {
+                                        display: flex;
+                                        width: 100%;
+                                        height: 100%;
+
+                                        /* background-color: red; */
+                                        >.row {
+                                            >div {
+                                                width: 50%;
+                                                padding: 15px 25px;
+
+                                                /* border: 1px solid gray; */
+                                                >* {
+                                                    display: flex;
+                                                    width: 100%;
+                                                }
+
+                                                >label {
+                                                    color: gray;
+                                                    margin-bottom: 5px;
+                                                }
+
+                                                >input {
+                                                    height: 60px;
+                                                    padding-left: 5px;
+                                                    border-radius: 5px;
+                                                    outline: none;
+                                                    border: 1px solid rgba(0, 0, 0, 0.355);
+                                                }
+
+                                                >button {
+                                                    border: none;
+                                                    outline: none;
+                                                    padding: 15px 30px;
+                                                    background-color: var(--y);
+                                                    color: black;
+                                                    font-size: 20px;
+                                                    border-radius: 5px;
+                                                    width: fit-content;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* end section Top/// */
+        >.cards {
+            width: 100%;
+
+            >.row {
+                justify-content: space-between;
+                /* gap: 20px; */
+
+                padding: 150px 120px;
+
+            }
+        }
+
+        /* end toip//// */
+        .logs {
+            width: 100%;
+            padding: 50px 120px;
+            background-image: url(../images/avada-taxi-stats-background.jpg);
+            background-size: cover;
+            min-height: 100px;
+
+            >.row {
+                justify-content: space-between;
+
+                >.number {
+                    width: 300px;
+                    height: 200px;
+                    border-radius: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.266);
+                    display: flex;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    margin: 20px 0;
+
+                    >* {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        font-weight: bold;
+                        color: white;
+                    }
+
+                    >h6 {
+                        font-size: 80px;
+                    }
+
+                    >span {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+        /* end top/// */
+        .footer {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url(../images/avada-taxi-testimonials-background.jpg);
+            background-size: 300% auto;
+            background-position: center;
+            padding: 100px 80px;
+
+            >.row {
+                &:first-of-type {
+                    >div {
+                        /* border: 1px solid rgb(255, 255, 255); */
+                        min-height: 200px;
+                        padding: 50px 10px;
+
+                        &:first-of-type {
+                            width: 25%;
+                        }
+
+                        &:last-of-type {
+                            width: 75%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+
+                &:last-of-type {
+                    >*{
+                        /* border: 1px solid white; */
+                        width: 100%;
+                    }
+                    >div{
+                        height: 4px;
+                        background-color: var(--y);
+                        position: relative;
+                        >span{
+                            width: 100px;height: 100px;
+                            font-size: 60px;
+                            position: absolute;
+                            left:calc(50% - 50px);
+                            top: calc(50% - 50px);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: black;
+                            border-radius: 50%;
+                            color: var(--y);
+                            border: 4px solid var(--y);
+                        }
+                    }
+                    >figure{
+                        justify-content: center;
+                        padding: 80px;
+                        /* background-color: red; */
+                        display: flex;
+                    }
+                    >p{
+                        text-align: center;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .cards>.row {
+        justify-content: center !important;
+    }
+}
